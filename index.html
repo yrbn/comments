@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>BaseDocument</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+  <link rel="stylesheet" href="./dist/assets/css/app.css">
+
+</head>
+<body>
+
+  <header>
+    <div class="header-wrapper">
+      <div class="header_menu">
+        <input type="checkbox" id="menu" class="menu_btn">
+        <label class="menu-icon" for="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <a href="#" class="header_comments icons icon-comment"></a>
+      <a href="#" class="header_share icons icon-arrow_uprt"></a>
+      <a href="#" class="header_news">news</a>
+      <a href="#" class="header_logo"></a>
+      <a href="#" class="header_customize">Aa</a>
+      <a href="#" class="header_search"></a>
+      <a href="#" class="header_avatar"><img src="assets/img/ava_user_big.png" alt=""></a>
+      <a href="#" class="header_bookmark icons icon-bkmrk"></a>
+    </div>
+
+  </header>
+
+  <div class="main">
+    
+    <div class="comments-head">
+      <div class="wrapper">
+        <div class="comments-head_counter js-comment-counter">
+        </div>
+        <div class="comments-head_filter">
+          <button class="comments-head_button js-btn_oldest">Oldest</button>
+          <button class="comments-head_button js-btn_newest">Newest</button>
+          <button class="comments-head_button js-btn_best">Best</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="comments">
+
+          <div class="comments_card" data-date="1477155912166">
+            <div class="comments_avatar">
+              <img src="assets/img/ava.png" alt="">
+            </div>
+            <div class="comments_block">
+              <div class="comments_author">Mike Taylor</div>
+              <div class="comments_date">
+                <span class="icons icon-clock"></span>
+                <span class="date_current">Apr 3, 13:22</span>
+              </div>
+              <div class="comments_likes">
+                <span class="icons icon-like js-icon-like"></span>
+                <span class="likes_count">5</span>
+              </div>
+              <div class="comments_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, error. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit modi quidem rerum quibusdam sapiente quasi. Culpa eveniet est quasi eaque quae aliquid animi sint magnam eligendi aperiam incidunt temporibus quod veritatis omnis porro sequi, ipsum eos, labore debitis, iste. Error ab, tempora amet accusamus, nobis distinctio totam asperiores expedita nihil.</div>
+            </div>
+          </div>
+
+          <div class="comments_card" data-date="1477158912166">
+            <div class="comments_avatar">
+              <img src="assets/img/ava.png" alt="">
+            </div>
+            <div class="comments_block">
+              <div class="comments_author">Mike Taylor</div>
+              <div class="comments_date">
+                <span class="icons icon-clock"></span>
+                <span class="date_current">Apr 3, 13:40</span>
+              </div>
+              <div class="comments_likes">
+                <span class="icons icon-like js-icon-like"></span>
+                <span class="likes_count">21</span>
+              </div>
+              <div class="comments_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, error. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit modi quidem rerum quibusdam sapiente quasi. Culpa eveniet est quasi eaque quae aliquid animi sint magnam eligendi aperiam incidunt temporibus quod veritatis omnis porro sequi, ipsum eos, labore debitis, iste. Error ab, tempora amet accusamus, nobis distinctio totam asperiores expedita nihil.
+              </div>
+            </div>
+          </div>
+
+          <div class="comments_card" data-date="1477156912166">
+            <div class="comments_avatar">
+              <img src="assets/img/ava.png" alt="">
+            </div>
+
+            <div class="comments_block">
+              <div class="comments_author">Mike Taylor</div>
+              <div class="comments_date">
+                <span class="icons icon-clock"></span>
+                <span class="date_current">Apr 3, 13:32</span>
+              </div>
+              <div class="comments_likes">
+                <span class="icons icon-like js-icon-like"></span>
+                <span class="likes_count">33</span>
+              </div>
+              <div class="comments_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="comments_add">
+          <div class="comments_avatar addcomment_ava">
+            <img src="assets/img/ava_user_big.png" alt="">
+          </div>
+
+          <div class="comments_input">
+            <input id="comment_input" type="text" placeholder="Write a comment...">
+            <label for="comment_input" class="icons icon-clip"></label>
+            <button class="comments_button">
+              <span class="icons icon-arrow_right"></span><span class="btn_submit">Submit</span>
+            </button>
+          </div>
+
+          
+
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="wrapper">
+
+      <div class="footer_menu">
+        <a href="#">About us</a>
+        <a href="#">Terms & conditions</a>
+        <a href="#">Privacy policy</a>
+      </div>
+
+      <div class="footer_rights">
+        &copy; 2015 All rights reserved.
+      </div>
+      
+      <div class="footer_socials">
+        <a href="#" class="icons icon-fb"></a>
+        <a href="#" class="icons icon-tw"></a>
+        <a href="#" class="icons icon-insta"></a>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>

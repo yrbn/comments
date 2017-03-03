@@ -1,0 +1,32 @@
+@import 'components/fonts';
+@import 'components/settings';
+@import 'components/mixins';
+@import 'icons/icons';
+@import 'components/header';
+@import 'components/page_comments';
+@import 'components/footer';
+
+* {
+    box-sizing: border-box;
+}
+
+html { 
+ position: relative; 
+ min-height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: $color-black;
+}
+
+.wrapper {
+    max-width: 1024px;
+    @include margin_auto;
+}

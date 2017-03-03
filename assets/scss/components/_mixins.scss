@@ -1,0 +1,134 @@
+
+/*      LOGO     */
+
+@mixin logo_leg {
+    content:"";
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-radius: 50px;
+    height: 20px;
+    width: 5px;
+    background: linear-gradient(to bottom, rgba(155,155,155,1) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 100%);
+}
+
+@mixin logo_crossbar {
+    @include logo_leg
+    z-index: 99;
+    top: -3px;
+    left: 8px;
+    position: absolute;
+    height: 26px;
+    background: $color-white;
+    transform: rotate(135deg);
+}
+
+@mixin logo {
+    position: relative;
+    @include logo_leg;
+
+    &:after {
+        position: absolute;
+        left: 16px;
+        transform: rotate(180deg);
+        @include logo_leg;
+    }
+
+    &:before {
+        @include logo_crossbar;
+    }
+}
+
+
+
+/*      MENU ICON     */
+
+@mixin menu {
+    [type="checkbox"] {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: relative;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+    }
+
+    .menu-icon span {
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background: $color-white;
+        border-radius: 10px;
+        transition: .25s ease-in-out;
+    }
+
+    .menu-icon span:nth-child(1) {
+        top: 0px;
+        transform-origin: center center;
+    }
+
+    .menu-icon span:nth-child(2) {
+        top: 6px;
+        width: 70%;
+        transform-origin: left center;
+    }
+
+    .menu-icon span:nth-child(3) {
+        top: 12px;
+        transform-origin: center center;
+    }
+
+    .menu_btn:checked ~ .menu-icon span:nth-child(1) {
+        transform: rotate(-45deg);
+        top: 2px;
+        left: 3px;
+        width: 70%;
+    }
+
+    .menu_btn:checked ~ .menu-icon span:nth-child(2) {
+        width: 0;
+    }
+
+    .menu_btn:checked ~ .menu-icon span:nth-child(3) {
+        transform: rotate(45deg);
+        top: 12px;
+        left: 3px;
+        width: 70%;
+    }
+}
+
+
+
+/*      SEARCH ICON     */
+
+@mixin lens {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $color-white;
+    position: relative;
+    border-radius: 100%;
+
+    &:before {
+        content: "";
+        position: absolute;
+        right: -2px;
+        bottom: 0;
+        border-width: 0;
+        background: $color-white;
+        width: 5px;
+        height: 1px;
+        transform: rotate(45deg);
+    }
+}
+
+
+
+/*      SEARCH ICON     */
+
+@mixin margin_auto {
+    margin: 0 auto;
+}
